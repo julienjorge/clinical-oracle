@@ -172,7 +172,7 @@ def run_rag(question: str, k: int) -> dict:
         sources_info.append({"source": src, "similarity": f"{cos:.2%}", "quality": quality, "content": doc.page_content})
     answer = (combined_prompt | llm | StrOutputParser()).invoke({"context": context, "question": question})
     return {"answer": answer, "query_used": question, "sources_details": sources_info,
-            "context_preview": "\n".join([f"[{s['source']}]: {s['content'][:80]}" for s in sources_info])}
+            "context_preview": "\n".join([f"[{s['source']}]: {s['content']}" for s in sources_info])}
 
 def run_judge(question, context, answer):
     try:
