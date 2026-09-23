@@ -1,11 +1,10 @@
 ---
-title: Clinical Oral RAG
+title: The Clinical Oracle
 emoji: 🧬
 colorFrom: blue
 colorTo: purple
-sdk: streamlit
-sdk_version: 1.32.0
-app_file: app.py
+sdk: docker
+app_port: 7860
 pinned: false
 ---
 

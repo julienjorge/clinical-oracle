@@ -1,0 +1,9 @@
+.git
+.env
+chroma_db
+docs
+*.md
+Clinical_Oracle_FINAL.ipynb
+archives_oracle.json
+__pycache__
+.DS_Store
