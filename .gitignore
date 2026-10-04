@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 chroma_db/
 archives_oracle.json
+
+# Captures de travail pour les slides
+images/
